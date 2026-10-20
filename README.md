@@ -30,6 +30,14 @@ The parser is tolerant of the preview format: it reads `EntityTypes/*/definition
 pip install git+https://github.com/Krusmaster/fabric-ontology-export
 ```
 
+## Works on
+
+| Platform | Status |
+| --- | --- |
+| Fabric | yes — input is a Fabric IQ ontology definition |
+| Databricks / Snowflake | not applicable as input; the RDF/Mermaid/TMDL outputs are platform-neutral |
+| Local Python | yes |
+
 ## License
 
 MIT
