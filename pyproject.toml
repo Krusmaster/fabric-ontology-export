@@ -1,0 +1,22 @@
+[project]
+name = "fabric-ontology-export"
+version = "0.1.0"
+description = "Export a Fabric IQ ontology to Mermaid, Power BI TMDL relationships, or RDF/Turtle"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Gustav Kruse" }]
+keywords = ["microsoft-fabric", "ontology", "fabric-iq", "power-bi", "rdf"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+fabric-ontology-export = "fabric_ontology_export.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["fabric_ontology_export*"]
